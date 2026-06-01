@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{ 
+     int choice ;
+    float voltage , resistance, current ;
+    printf ("1.voltage\t");
+    printf("2.resistance\t");
+    printf("3.current\n");
+    printf ( "enter your choice");
+    scanf("%d",&choice);
+    if ( choice ==1) {
+        printf("Enter Current: ");
+        scanf("%f", &current);
+
+        printf("Enter Resistance: ");
+        scanf("%f", &resistance);
+
+        voltage = current * resistance;
+
+        printf("Voltage = %.2f V\n", voltage);
+    
+    }
+    else if (choice==2)
+    { printf("Enter voltage : ");
+        scanf("%f", &voltage);
+
+        printf("Enter current : ");
+        scanf("%f", &current);
+
+    resistance= voltage /current;
+
+        printf("resistance= %.2f V\n",voltage);
+    
+    }else if (choice==3)
+     {
+        printf("Enter Voltage: ");
+        scanf("%f", &voltage);
+
+        printf("Enter Resistance: ");
+        scanf("%f", &resistance);
+
+        current = voltage / resistance;
+
+        printf("Current = %.2f A\n", current);
+    }
+  
+   return 0 ;
+    
+}
